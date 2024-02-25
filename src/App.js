@@ -57,7 +57,7 @@ app.post('/CreateScripter', cors(corsOptions), async (req, res) => {
         <context>{context}</context>
         You should answer the code question giving an example to the user, use concise responses dont invent stuff.
         The format of your response is:
-        Consice short explanation, no line breaks.
+        Consice short explanation: add a single linebreak.
         <code>Code example</code>
         If the question is not related to QuestionProJs logics, kindly remind the user that you can help only on QuestionPro Javascript logics questions at the moment & invite the user to our help center: https://www.questionpro.com/help/ (dont use the same text always to this, create a short invitation) "
         Question: {input}`);
