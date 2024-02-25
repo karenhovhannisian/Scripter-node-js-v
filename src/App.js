@@ -36,7 +36,7 @@ app.post('/CreateScripter', async (req, res) => {
     const vectorStore = await MemoryVectorStore.fromDocuments(splits, new OpenAIEmbeddings());
     const retriever = vectorStore.asRetriever();
 
-    //Create query for models
+    //Create query for models 
     const llm = new ChatOpenAI({ modelName: "gpt-3.5-turbo-0125", temperature: 0 });   //Replace model for the fine-tuned version
     const prompt = ChatPromptTemplate.fromTemplate(`
         Answer the following question based only on the provided context:
