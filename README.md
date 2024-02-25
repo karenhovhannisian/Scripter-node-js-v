@@ -8,7 +8,7 @@ Scripter is built using Express.js and integrates various libraries from LangCha
 
 The application leverages Express.js for its web server framework, allowing it to handle HTTP requests efficiently. It uses the body-parser middleware to parse JSON request bodies, facilitating easy access to request data. The core functionality revolves around LangChain, a toolkit for building language models and processing text. This application specifically uses components for text splitting, document loading, vector storage, and integration with OpenAI's models.
 
-## Key Components
+## Key Components 
 
 - **Express.js:** Web server framework for handling HTTP requests.
 - **body-parser:** Middleware for parsing JSON request bodies.
