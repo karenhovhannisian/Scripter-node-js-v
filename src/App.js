@@ -38,6 +38,13 @@ const corsOptions = {
 // Use CORS middleware to enable cross-origin requests
 app.use(cors(corsOptions));
 
+
+// Handle preflight requests for all routes
+app.options('*', cors(corsOptions)); // Include corsOptions here if needed
+
+
+//CORS - Security ---
+
 // POST route to accept input
 app.post('/CreateScripter', async (req, res) => {
     const inputText = req.body.input; // Access the input from the request body
