@@ -23,8 +23,6 @@ app.use(bodyParser.json());
 
 //CORS - Security
 
-// Use the custom CORS middleware in your application
-app.use(customCorsMiddleware);
 
 // CORS configuration for specific origins
 const corsOptions = {
@@ -34,7 +32,7 @@ const corsOptions = {
   };
 
 // Use CORS middleware to enable cross-origin requests
-//app.use(cors());
+app.use(cors(corsOptions));
 
 //CORS - Security
 
