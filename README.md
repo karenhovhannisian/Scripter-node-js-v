@@ -6,7 +6,7 @@ Scripter is built using Express.js and integrates various libraries from LangCha
 
 ## Overview
 
-The application leverages Express.js for its web server framework, allowing it to handle HTTP requests efficiently. It uses the body-parser middleware to parse JSON request bodies, facilitating easy access to request data. The core functionality revolves around LangChain, a toolkit for building language models and processing text. This application specifically uses components for text splitting, document loading, vector storage, and integration with OpenAI's models.
+Scripter leverages Express.js for its web server framework, allowing it to handle HTTP requests efficiently. It uses the body-parser middleware to parse JSON request bodies, facilitating easy access to request data. The core functionality revolves around LangChain, a toolkit for building language models and processing text. This application specifically uses components for text splitting, document loading, vector storage, and integration with OpenAI's models.
 
 ## Key Components 
 
@@ -35,7 +35,7 @@ The application leverages Express.js for its web server framework, allowing it t
 
 ## Development and Extension
 
-This application is structured for modularity and easy extension. Developers can add new routes, integrate additional LangChain components, or modify the existing processing pipeline to suit different use cases. The application's use of environment variables and external document loading makes it adaptable to various deployment environments and data sources.
+Scripter is structured for modularity and easy extension. Developers can add new routes, integrate additional LangChain components, or modify the existing processing pipeline to suit different use cases. The application's use of environment variables and external document loading makes it adaptable to various deployment environments and data sources.
 
 ## Contributing
 
