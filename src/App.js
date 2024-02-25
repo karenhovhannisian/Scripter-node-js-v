@@ -9,6 +9,7 @@ import { TextLoader } from "langchain/document_loaders/fs/text";
 import { createRetrievalChain } from "langchain/chains/retrieval";
 import { createStuffDocumentsChain } from "langchain/chains/combine_documents";
 import dotenv from 'dotenv';
+import cors from 'cors';
 
 // Load env config 
 dotenv.config();
@@ -19,6 +20,23 @@ const port = process.env.PORT || 3000; // load port from .env or default to 3000
 
 // Middleware to parse JSON bodies
 app.use(bodyParser.json());
+
+//CORS - Security
+const allowedOrigin = 'https://chatbot-vite-template.onrender.com/';
+
+const corsOptions = {
+    origin: (origin, callback) => {
+        if (!origin || origin === allowedOrigin) {
+            callback(null, true);
+        } else {
+            callback(new Error('Not allowed by CORS'));
+        }
+    },
+    optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204
+};
+
+// Use CORS middleware to enable cross-origin requests
+app.use(cors(corsOptions));
 
 // POST route to accept input
 app.post('/CreateScripter', async (req, res) => {
