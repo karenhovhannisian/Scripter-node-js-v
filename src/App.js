@@ -22,8 +22,6 @@ const port = process.env.PORT || 3000; // load port from .env or default to 3000
 app.use(bodyParser.json());
 
 //CORS - Security
-
-
 // CORS configuration for specific origins
 const corsOptions = {
     origin: 'https://chatbot-vite-template.onrender.com', // or an array of origins
