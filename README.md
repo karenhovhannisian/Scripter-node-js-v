@@ -43,7 +43,7 @@ Contributions are welcome! Whether it's bug fixes, feature additions, or improve
 
 ## Contact and Contributors
 
-gabriel.rodriguez@questionpro.com
+gabo9rm@gmail.com
 
 
 
