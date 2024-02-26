@@ -21,7 +21,7 @@ const port = process.env.PORT || 3000; // load port from .env or default to 3000
 // Middleware to parse JSON bodies
 app.use(bodyParser.json());
 
-//CORS - Security - Use CORS if your front-end is on a different server
+//CORS - Security - Isolate endpoint
 // CORS configuration for specific origins
 const corsOptions = {
     origin: 'https://chatbot-vite-template.onrender.com', // or an array of origins
@@ -32,7 +32,7 @@ const corsOptions = {
 // Use CORS middleware to enable cross-origin requests
 app.use(cors(corsOptions));
 
-//CORS - Security
+//END CORS - Security
 
 // POST route to accept input
 app.post('/CreateScripter', cors(corsOptions), async (req, res) => {
