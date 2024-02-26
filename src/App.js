@@ -23,7 +23,8 @@ app.use(bodyParser.json());
 // CORS - Security - Isolate endpoint
 // CORS configuration for specific origins
 const corsOptions = {
-    origin: process.env.ORIGIN,
+    // TODO: Replace with your own origin
+    origin: '*',
     methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
     allowedHeaders: ['Content-Type', 'Authorization']
   };
